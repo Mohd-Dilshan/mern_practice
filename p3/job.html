@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDE-1 Delhi</title>
+</head>
+<body>
+    <h2>Software Developer Engineer</h2>
+    <nav></nav>
+    
+    <main>
+    <form id="registerForm" action="/register" method="post" >
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name</label>
+            <input type="name" name="name" id="name" >
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" >
+        </fieldset>
+        <br>
+        
+        <fieldset>
+            <legend>Qualifications</legend>
+            <h4>Enter Percentage Only</h4>
+            <label for="10th">10th</label>
+            <input type="10th" name="10th" id="10th" >
+            <label for="12th">12th</label>
+            <input type="12th" name="12th" id="12th" >
+            <label for="Graduation">Graduation</label>
+            <input type="Graduation" name="Graduation" id="Graduation" >
+            <label for="yr">Completion Year</label>
+            <input type="date" name="" id="">
+            <label for="cgpa">cgpa</label>
+            <input type="number" name="cgpa" id="cgpa" >
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="Skills">Select skills</label>
+
+            <input list="skills">
+            <datalist id="skills">
+                <option >Web Developer</option>
+                <option >App Developer</option>
+                <option >Java Developer</option>
+                <option >Mern Full Stack</option>
+            </datalist>
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Date of birth</legend>
+            <h4>Select Date of Birth</h4>
+
+            <input type="date" name="" id="">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Other Information</legend>
+            <h4>Are you willing to relocate to the job location if required for this position?</h4>
+            <select name="question" id="question">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <h4>If relocation is required, how soon would you be able to relocate?</h4>
+            <select name="question" id="question">
+                <option value="Immediately">Immediately</option>
+                <option value="Within 1 Month">Within 1 Month</option>
+                <option value="Within 2 Month">Within 2–3 months</option>
+                <option value="Within 3 Month">More than 3 months</option>
+            </select>
+
+            <h4>Do you have any specific requirements or constraints that may affect your ability to relocate</h4>
+            <select name="question" id="question">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <label for="question">If yes, please specify.</label>
+            <input type="text" name="question" id="question">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Upload Resume</legend>
+            <input type="file" name="cv" id="cv" >
+        </fieldset>
+        <br>
+        
+
+        <button type="submit">Submit</button>
+    </form>
+    </main>
+
+    <script>
+    </script>
+    
+</body>
+</html>

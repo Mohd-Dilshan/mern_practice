@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+    <form>
+        <input type="text" minlength="3" maxlength="20">
+
+        <label for="mobile">Number</label>
+        <input id="mobile" type="tel" pattern="[0-9]{10}">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" autocomplete="email">
+
+        <select name="topics" id="topics">
+            <option value="t1">test</option>
+            <option value="t2">t2</option>
+            <option value="t3">t3</option>
+        </select>
+
+        <input list="browser" type="text">
+
+        <datalist id="browser">
+            <option value="chrome">Chrome</option>
+            <option value="mozilla">Mozilla</option>
+            <option value="edge">Edge</option>
+        </datalist>
+
+        <label for="browser">Browser</label>
+    </form>
+
+    <select name="text" id="t">
+        <option value="a">A</option>
+        <option value="">B</option>
+        <option value="">C</option>
+    </select>
+
+
+
+    <input list="opt">
+    <datalist id="opt"  >
+   <option value="one">one</option>
+      <option value="one">one</option>   <option value="one">one</option>
+         <option value="one">one</option>
+            <option value="one">one</option>   <option value="one">one</option>
+            
+    </datalist>
+    <br><br>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+        <input type="text" name="age" id="age">
+        <input type="text" name="name" id="name">
+    </fieldset>
+    <br>
+
+    <input type="number" id="age" required>
+    <button onclick="check()">Submit</button>
+
+    <br>
+</main>
+
+<script>
+    function check() {
+        let age = Number(document.getElementById("age").value);
+
+        if (age < 18) {
+            alert("Minor");
+            console.log("uyvycv");
+        } else {
+            alert("Adult");
+        }
+    }
+</script>
+</body>
+
+</html>

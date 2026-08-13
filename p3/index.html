@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDE Job Application - Delhi</title>
+</head>
+<body>
+
+    <h1>SDE Job Application</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <br><br>
+
+            <label for="location">Current City:</label>
+            <input type="text" id="location" name="location" value="Delhi">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Job Details</legend>
+
+            <label for="role">Applying For:</label>
+            <select id="role" name="role" required>
+                <option value="">-- Select Role --</option>
+                <option value="sde-1">Software Development Engineer I</option>
+                <option value="sde-2">Software Development Engineer II</option>
+                <option value="intern">Software Engineer Intern</option>
+            </select>
+            <br><br>
+
+            <label>Experience:</label>
+            <input type="radio" id="fresher" name="experience" value="fresher">
+            <label for="fresher">Fresher</label>
+
+            <input type="radio" id="1-3" name="experience" value="1-3">
+            <label for="1-3">1–3 Years</label>
+
+            <input type="radio" id="3plus" name="experience" value="3+">
+            <label for="3plus">3+ Years</label>
+            <br><br>
+
+            <label for="salary">Expected Salary (LPA):</label>
+            <input type="number" id="salary" name="salary" min="0">
+            <br><br>
+
+            <label for="joining">Availability:</label>
+            <select id="joining" name="joining">
+                <option value="">-- Select --</option>
+                <option value="immediate">Immediate</option>
+                <option value="15-days">Within 15 Days</option>
+                <option value="30-days">Within 30 Days</option>
+                <option value="60-days">Within 60 Days</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Technical Skills</legend>
+
+            <p>Select your skills:</p>
+
+            <input type="checkbox" id="java" name="skills" value="java">
+            <label for="java">Java</label>
+
+            <input type="checkbox" id="python" name="skills" value="python">
+            <label for="python">Python</label>
+
+            <input type="checkbox" id="javascript" name="skills" value="javascript">
+            <label for="javascript">JavaScript</label>
+
+            <input type="checkbox" id="react" name="skills" value="react">
+            <label for="react">React</label>
+
+            <input type="checkbox" id="node" name="skills" value="node">
+            <label for="node">Node.js</label>
+
+            <input type="checkbox" id="sql" name="skills" value="sql">
+            <label for="sql">SQL</label>
+
+            <br><br>
+
+            <label for="github">GitHub Profile:</label>
+            <input type="url" id="github" name="github">
+            <br><br>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Education</legend>
+
+            <label for="degree">Highest Qualification:</label>
+            <select id="degree" name="degree">
+                <option value="">-- Select --</option>
+                <option value="btech">B.Tech / B.E.</option>
+                <option value="bca">BCA</option>
+                <option value="mca">MCA</option>
+                <option value="mtech">M.Tech</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+
+            <label for="college">College / University:</label>
+            <input type="text" id="college" name="college">
+            <br><br>
+
+            <label for="graduation">Graduation Year:</label>
+            <input type="number" id="graduation" name="graduation"
+                   min="2000" max="2030">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="cover">Why should we hire you?</label>
+            <br>
+            <textarea id="cover" name="cover" rows="6" cols="50"
+                      placeholder="Tell us about yourself..."></textarea>
+        </fieldset>
+
+        <br>
+
+        <input type="checkbox" id="declaration" name="declaration" required>
+        <label for="declaration">
+            I confirm that the information provided is accurate.
+        </label>
+
+        <br><br>
+
+        <button type="submit">Apply for SDE Role</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
