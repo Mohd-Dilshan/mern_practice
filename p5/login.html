@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" style=" text-decoration: none; border: 1px solid black;">Back</a>
+    </nav>
+    <main>
+        <div style="background-color: wheat;">
+            <h3>Log in to Invertis</h3>
+        <fieldset id="login">
+            <legend>Log in</legend>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"> <br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="passwordd"><br><br>
+            <button onclick="clickLogin()">Login</button>
+        </fieldset>
+        </div>
+    </main>
+
+    <script>
+    function clickLogin() {
+        let email = document.getElementById("email").value;
+        let pass = document.getElementById('passwordd').value;
+        let obj = {
+            "Email" : email,
+            "Pass " : pass
+        }
+       // alert(email,pass);
+        // alert(email);
+        // alert(pass);
+         alert(obj.Email + " " + pass)
+    }
+    </script>
+
+    <br><br>
+    <footer style="margin-left: 450px;">-------Thank You-------</footer>
+    
+</body>
+</html>

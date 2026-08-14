@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" style=" text-decoration: none; border: 1px solid black;">Back</a>
+    </nav>
+    <br>
+    <main>
+        <div style="background-color: wheat">
+        <form >
+            <fieldset id="fields">
+            <legend>Personal Information</legend>
+            <label for="name">Name</label>
+            <input type="name" name="name" id="name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"> <br><br>
+            <label for="ten">10th Percentage</label>
+            <input type="number" name="ten" id="ten">
+            <label for="tw">12th Percentage</label>
+            <input type="number" name="tw" id="tw">
+            <label for="date">Date of Birth</label>
+            <input type="date" name="date" id="date">
+            <label for="choose">Select Course</label>
+            <select name="choose" id="choose">
+                <option value="" disabled selected>Choose an option</option>
+                <option value="B.Tech CSE">B.Tech CSE</option>
+                <option value="B.Tech Cloud">B.Tech Cloud</option>
+                <option value="B.Tech AI">B.Tech AI</option>
+                <option value="B.Tech Iot">B.Tech Iot</option>
+            </select>
+            <br><br>
+            <label for="feed" id="feed">Where did you find us ?</label>
+            <select name="feed" id="feed">
+                <option value="" disabled selected>Choose an option</option>
+                <option value="google">Google Search</option>
+                <option value="social-media">Social Media</option>
+                <option value="friends">Friends</option>
+                <option value="advertisement">Advertisement</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <button onclick="clickMe()">Submit</button>
+        </fieldset>
+        </form>
+        </div>
+
+    </main>
+    <script>
+
+    function clickMe() {
+        let fields = document.getElementById('fields');
+        alert("Form submitted succesfully");
+    }
+    
+    </script>
+    <br><br>
+    <footer style="margin-left: 450px;">-------Thank You-------</footer>
+    
+</body>
+</html>
