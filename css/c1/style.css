@@ -1,0 +1,74 @@
+:root {
+    --primary-color:rgb(200, 255, 0);
+}
+p {
+    color: blue;
+}
+p{
+    color: red;
+}
+h1 span {
+    color: blueviolet;
+}
+h1 > span {
+    color: gray;
+}
+div ~ h5 {
+    color: navajowhite;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+    /* text-decoration: underline; */
+    /* text-decoration: line-through;  */
+    text-decoration: none;
+    /* text-transform: uppercase;  */
+    text-transform: capitalize;
+    word-spacing:4px ;
+    letter-spacing: 3px ;
+    text-shadow: 5px 5px 5px red;
+}
+h3 {
+    color:var(--primary-color);
+}
+
+div {
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    background-color: coral;
+    margin: 2px;
+    padding: 2rem;
+    border:2px solid black;
+    overflow: scroll;
+    
+}
+#child {
+    height: 400px;
+    width: 50%;
+    overflow: auto;
+    min-height: 230px;
+    max-height: 500px;
+    border:2px solid black;
+    padding: 2rem;
+    background: #000;
+
+}
+
+
+button:hover {
+    background: brown;
+    color: black;
+}
+
+/* p::before {
+    content: '---->';
+} */
+p::first-letter {
+    font-size: 50px;
+    color: red;
+
+}
